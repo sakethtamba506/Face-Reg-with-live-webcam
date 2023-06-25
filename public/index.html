@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <script defer src="face-api.min.js"></script>
+    <script defer src="controller.js" ></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="shortcut icon" href="#" />
+</head>
+<body>
+    <form action="/addstudent" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="file">File:</label>
+        <input type="file" id="file" name="file" required>
+      
+        <button type="submit">Submit</button>
+    </form><br>
+    <form action="/view" method="get">
+        <input type="submit" value="view ALL Photos">
+    </form>
+    
+    <video id="video" width="600" height="450" autoplay class="video"></video>
+    
+    
+</body>
+</html>
